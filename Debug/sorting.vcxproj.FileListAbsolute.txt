@@ -1,0 +1,2 @@
+C:\Users\parad\Documents\_Portfolio\Sorting Algorithms\sorting\Debug\sorting.exe
+C:\Users\parad\Documents\_Portfolio\Sorting Algorithms\sorting\Debug\sorting.pdb
