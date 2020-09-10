@@ -52,13 +52,13 @@ namespace Demo
 		std::cout << std::endl << std::endl;
 
 		std::string* unsorted_str = new std::string[5];
-		unsorted_str[0] = "Kaorin";
+		unsorted_str[0] = "Chiyo";
 		unsorted_str[1] = "Sakaki";
 		unsorted_str[2] = "Kagura";
 		unsorted_str[3] = "Koyomi";
 		unsorted_str[4] = "Nyamo";
 
-		std::string param = "Osaka";
+		std::string param = "Chihiro";
 
 		std::cout << "Insertion::insert(" << param << ") ------" << std::endl << std::endl;
 		Bubble::bubbleSort(unsorted_str, 5);

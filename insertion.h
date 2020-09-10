@@ -41,9 +41,9 @@ namespace Insertion
 		T* insertedArr = new T[length + 1];
 		memcpy(insertedArr, arr, sizeof(T) * length);
 
-		unsigned int tail = length - 1;
+		int tail = length - 1;
 
-		while (tail > 0 && arr[tail] > param)
+		while (tail > -1 && arr[tail] > param)
 		{
 			insertedArr[tail + 1] = insertedArr[tail];
 			tail--;
