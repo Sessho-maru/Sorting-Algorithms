@@ -1,0 +1,55 @@
+#pragma once
+#include <iostream>
+
+namespace Insertion
+{
+	template<typename T>
+	const bool insertionSort(T* arr, const unsigned int length)
+	{
+		bool isSorted = false;
+
+		for (unsigned int i = 1; i < length; i++)
+		{
+			int j = i - 1;
+			T valueAtI = arr[i];
+
+			while (j > -1 && arr[j] > valueAtI)
+			{
+				arr[j + 1] = arr[j];
+				j--;
+
+				isSorted = true;
+			}
+			arr[j + 1] = valueAtI;
+		}
+
+		if (isSorted == false)
+		{
+			return false;
+		}
+
+		for (unsigned int i = 0; i < length; i++)
+		{
+			std::cout << arr[i] << std::endl;
+		}
+		return true;
+	}
+
+	template<typename T>
+	T* insert(T* arr, const unsigned int length, const T param) // insert param into alraedy sorted arr and return it
+	{
+		T* insertedArr = new T[length + 1];
+		memcpy(insertedArr, arr, sizeof(T) * length);
+
+		unsigned int tail = length - 1;
+
+		while (tail > 0 && arr[tail] > param)
+		{
+			insertedArr[tail + 1] = insertedArr[tail];
+			tail--;
+		}
+		insertedArr[tail + 1] = param;
+
+		return insertedArr;
+	}
+}

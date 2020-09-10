@@ -139,8 +139,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="bubble.h" />
+    <ClInclude Include="demo.h" />
+    <ClInclude Include="insertion.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="demo.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

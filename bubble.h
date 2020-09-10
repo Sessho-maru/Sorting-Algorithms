@@ -3,7 +3,7 @@
 
 namespace Bubble
 {
-	template <typename T>
+	template<typename T>
 	void swap(T* x, T* y)
 	{
 		T temp = *y;
@@ -12,7 +12,7 @@ namespace Bubble
 	}
 
 	template<typename T>
-	const bool bubbleSort(T arr, unsigned int length)
+	const bool bubbleSort(T* arr, const unsigned int length)
 	{
 		bool isSorted = false;
 
@@ -41,7 +41,7 @@ namespace Bubble
 	}
 
 	template<typename T>
-	const bool bubbleSortAndFindnthBiggest(T arr, unsigned int length, unsigned int nth) // third param for finding 'specified'th biggest value in arr
+	const bool bubbleSortAndFindnthBiggest(T* arr, const unsigned int length, const unsigned int nth) // third param for finding 'specified'th biggest value in arr
 	{
 		bool isSorted = false;
 
