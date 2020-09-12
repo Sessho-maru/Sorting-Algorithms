@@ -141,6 +141,7 @@
     <ClInclude Include="bubble.h" />
     <ClInclude Include="demo.h" />
     <ClInclude Include="insertion.h" />
+    <ClInclude Include="quick.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="demo.cpp" />

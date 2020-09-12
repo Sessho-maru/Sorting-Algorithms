@@ -1,5 +1,3 @@
 ﻿  demo.cpp
-C:\Users\parad\Documents\_Portfolio\Sorting Algorithms\sorting\demo.h(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\parad\Documents\_Portfolio\Sorting Algorithms\sorting\demo.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\parad\Documents\_Portfolio\Sorting Algorithms\sorting\demo.cpp(10,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   sorting.vcxproj -> C:\Users\parad\Documents\_Portfolio\Sorting Algorithms\sorting\Debug\sorting.exe
