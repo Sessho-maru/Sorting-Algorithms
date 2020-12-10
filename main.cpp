@@ -2,8 +2,8 @@
 
 int main()
 {
-	Demo::demoBubble();
+	// Demo::demoBubble();
 	Demo::demoInsertion();
-	Demo::demoQuick();
+	// Demo::demoQuick();
 	return 0;
 }

@@ -4,7 +4,7 @@
 namespace Insertion
 {
 	template<typename T>
-	const bool insertionSort(T* arr, const unsigned int length)
+	const bool insertionSort(T* arr, const size_t length)
 	{
 		bool isSorted = false;
 
@@ -28,7 +28,7 @@ namespace Insertion
 			return false;
 		}
 
-		for (unsigned int i = 0; i < length; i++)
+		for (size_t i = 0; i < length; i++)
 		{
 			std::cout << arr[i] << std::endl;
 		}
@@ -36,7 +36,7 @@ namespace Insertion
 	}
 
 	template<typename T>
-	T* insert(T* arr, const unsigned int length, const T param) // insert param into alraedy sorted arr and return it
+	T* insert(T* arr, const size_t length, const T param) // insert param into alraedy sorted arr and return it
 	{
 		T* insertedArr = new T[length + 1];
 		memcpy(insertedArr, arr, sizeof(T) * length);

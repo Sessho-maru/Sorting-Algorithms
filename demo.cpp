@@ -1,6 +1,6 @@
 #include "demo.h"
-#include<cstdlib>
-#include<ctime>
+#include <cstdlib>
+#include <ctime>
 #include <string>
 
 #define ARRAY_SIZE 10
@@ -20,22 +20,22 @@ namespace Demo
 	{
 		unsigned int unsorted[ARRAY_SIZE];
 		random(unsorted, ARRAY_SIZE);
+
 		std::cout << "Bubble::bubbleSort() ------" << std::endl << std::endl;
 		if (Bubble::bubbleSort(unsorted, ARRAY_SIZE) == false)
 		{
 			std::cout << "already sorted" << std::endl;
 		}
-
 		std::cout << std::endl << std::endl;
 
 		random(unsorted, ARRAY_SIZE);
 		unsigned int target = 4;
+
 		std::cout << "Bubble::bubbleSortAndFind"<< target  << "thBiggest() ------" << std::endl << std::endl;
 		if (Bubble::bubbleSortAndFindnthBiggest(unsorted, ARRAY_SIZE, target) == false)
 		{
 			std::cout << "already sorted" << std::endl;
 		}
-
 		std::cout << std::endl << std::endl;
 	}
 
@@ -43,12 +43,12 @@ namespace Demo
 	{
 		unsigned int unsorted[ARRAY_SIZE];
 		random(unsorted, ARRAY_SIZE);
+
 		std::cout << "Insertion::insertionSort() ------" << std::endl << std::endl;
 		if (Insertion::insertionSort(unsorted, ARRAY_SIZE) == false)
 		{
 			std::cout << "already sorted" << std::endl;
 		}
-
 		std::cout << std::endl << std::endl;
 
 		std::string* unsorted_str = new std::string[5];
@@ -57,15 +57,15 @@ namespace Demo
 		unsorted_str[2] = "Kagura";
 		unsorted_str[3] = "Koyomi";
 		unsorted_str[4] = "Nyamo";
-
 		std::string param = "Chihiro";
 
-		std::cout << "Insertion::insert(" << param << ") ------" << std::endl << std::endl;
 		Bubble::bubbleSort(unsorted_str, 5);
 		std::cout << std::endl;
 
+		std::cout << "Insertion::insert(" << param << ") ------" << std::endl << std::endl;
+
 		unsorted_str = Insertion::insert(unsorted_str, 5, param);
-		for (unsigned int i = 0; i < 6; i++)
+		for (size_t i = 0; i < 6; i++)
 		{
 			std::cout << unsorted_str[i] << std::endl;
 		}
@@ -81,7 +81,7 @@ namespace Demo
 		Quick::quickSort(unsorted, 0, ARRAY_SIZE - 1);
 
 
-		for (unsigned int i = 0; i < ARRAY_SIZE; i++)
+		for (size_t i = 0; i < ARRAY_SIZE; i++)
 		{
 			std::cout << unsorted[i] << std::endl;
 		}
@@ -97,7 +97,7 @@ namespace Demo
 
 		Quick::quickSort(unsorted_str, 0, 4);
 
-		for (unsigned int i = 0; i < 5; i++)
+		for (size_t i = 0; i < 5; i++)
 		{
 			std::cout << unsorted_str[i] << std::endl;
 		}
