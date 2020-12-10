@@ -21,15 +21,22 @@ namespace Demo
 		unsigned int unsorted[ARRAY_SIZE];
 		random(unsorted, ARRAY_SIZE);
 
+
+
+// demo : bubbleSort()
 		std::cout << "Bubble::bubbleSort() ------" << std::endl << std::endl;
 		if (Bubble::bubbleSort(unsorted, ARRAY_SIZE) == false)
 		{
 			std::cout << "already sorted" << std::endl;
 		}
 		std::cout << std::endl << std::endl;
-
 		random(unsorted, ARRAY_SIZE);
+
+
+
+// demo : bubbleSortAndFind()
 		unsigned int target = 4;
+		/* find 4th biggest element */
 
 		std::cout << "Bubble::bubbleSortAndFind"<< target  << "thBiggest() ------" << std::endl << std::endl;
 		if (Bubble::bubbleSortAndFindnthBiggest(unsorted, ARRAY_SIZE, target) == false)
@@ -44,6 +51,9 @@ namespace Demo
 		unsigned int unsorted[ARRAY_SIZE];
 		random(unsorted, ARRAY_SIZE);
 
+
+
+// demo : insertionSort()
 		std::cout << "Insertion::insertionSort() ------" << std::endl << std::endl;
 		if (Insertion::insertionSort(unsorted, ARRAY_SIZE) == false)
 		{
@@ -51,19 +61,23 @@ namespace Demo
 		}
 		std::cout << std::endl << std::endl;
 
+
+
+// demo : insert()
 		std::string* unsorted_str = new std::string[5];
-		unsorted_str[0] = "Chiyo";
-		unsorted_str[1] = "Sakaki";
-		unsorted_str[2] = "Kagura";
-		unsorted_str[3] = "Koyomi";
-		unsorted_str[4] = "Nyamo";
-		std::string param = "Chihiro";
+		unsorted_str[0] = "ChiyoChiyoChiyoChiyoChiyoChiyoChiyoChiyoChiyoChiyoChiyoChiyoChiyoChiyoChiyo";
+		unsorted_str[1] = "SakakiSakakiSakakiSakakiSakakiSakakiSakakiSakakiSakakiSakakiSakakiSakakiSakakiSakakiSakaki";
+		unsorted_str[2] = "KaguraKaguraKaguraKaguraKaguraKaguraKaguraKaguraKaguraKaguraKaguraKaguraKaguraKaguraKagura";
+		unsorted_str[3] = "KoyomiKoyomiKoyomiKoyomiKoyomiKoyomiKoyomiKoyomiKoyomiKoyomiKoyomiKoyomiKoyomiKoyomiKoyomi";
+		unsorted_str[4] = "NyamoNyamoNyamoNyamoNyamoNyamoNyamoNyamoNyamoNyamoNyamoNyamoNyamoNyamoNyamo";
+
+		std::string param = "ChihiroChihiroChihiroChihiroChihiroChihiroChihiroChihiroChihiroChihiroChihiroChihiroChihiroChihiroChihiro";
+		/* param will be inserted into proper position */
 
 		Bubble::bubbleSort(unsorted_str, 5);
 		std::cout << std::endl;
 
 		std::cout << "Insertion::insert(" << param << ") ------" << std::endl << std::endl;
-
 		unsorted_str = Insertion::insert(unsorted_str, 5, param);
 		for (size_t i = 0; i < 6; i++)
 		{
