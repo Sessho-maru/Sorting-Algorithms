@@ -39,14 +39,3 @@
         * An array contains any type specified as T
         * Length of the array
         * T element desired to be inserted
-
-
-
-### How to use
-Give this tool a folder directory where your desired videos live</br>
-then this tool will parse every `.pbf` file and produce one text file</br></br>
-This tool may be useful when you're wanting to reference lecture videos quickly by mapping the name of specific subject with timestamp when it is started</br>
-
-### About this tool
-Considering lecture videos has its order and usually specifies that by numbering</br>
-this tool exptects all the names of video file and folder have already been numbered
