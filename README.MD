@@ -19,7 +19,7 @@
     - parameters
         * An array contains any type specified as T
         * Length of the array
-        * The **[NUMBER passed as 3rd param]th** biggest element in given array
+        * The **[NUMBER passed as third param]th** biggest element in given array
 
 <br>
         
@@ -34,8 +34,8 @@
 * *T** &nbsp;&nbsp;insert &nbsp;( **T***, **const size_t**, **const t** )
     -
     - return value
-        * Return Array T* that contains given T at proper position
+        * Return Array T* that contains data T passed as third param at proper position
     - parameters
         * An array contains any type specified as T
         * Length of the array
-        * T element desired to be inserted
+        * Data T desired to be inserted
