@@ -5,7 +5,7 @@
 
 ## Specifications
 ### Bubble sort
-* *const bool* &nbsp;&nbsp;bubbleSort &nbsp;( **T***, **length** )
+* *const bool* &nbsp;&nbsp;bubbleSort &nbsp;( **T***, **const size_t** )
     -
     - return value
         * If given Array T* is already sorted return *false*, otherwise return *true*
@@ -24,7 +24,7 @@
 <br>
         
 ### Insertion sort
-* *const bool* &nbsp;&nbsp;insertionSort &nbsp;( **T***, **length** )
+* *const bool* &nbsp;&nbsp;insertionSort &nbsp;( **T***, **const size_t** )
     -
     - return value
         * If given Array T* is already sorted return *false*, otherwise return *true*
