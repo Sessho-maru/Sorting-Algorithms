@@ -12,14 +12,14 @@
     - parameters
         * An array contains any type specified as T
         * Length of the array
-* *const bool* &nbsp;&nbsp;bubbleSortAndFindnthBiggest &nbsp;( **T***, **const size_t**, **const unsigned int** )
+* *const T* &nbsp;&nbsp;bubbleSortAndFindnthBiggest &nbsp;( **T***, **const size_t**, **const unsigned int** )
     -
     - return value
-        * If given Array T* is already sorted return *false*, otherwise return *true*
+        * [*unsigned int number passed as 3rd param*]th biggest element in T*
     - parameters
         * An array contains any type specified as T
         * Length of the array
-        * The **[NUMBER passed as third param]th** biggest element in given array
+        * Unsigned int number to specifies the [*this number*]th biggest element in T* array
 
 <br>
         
