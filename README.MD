@@ -8,18 +8,18 @@
 * *const bool* &nbsp;&nbsp;bubbleSort &nbsp;( **T***, **const size_t** )
     -
     - return value
-        * If given Array T* is already sorted return *false*, otherwise return *true*
+        * If T* has already been sorted return *false*, otherwise return *true*
     - parameters
         * An array contains any type specified as T
         * Length of the array
 * *const T* &nbsp;&nbsp;bubbleSortAndFindnthBiggest &nbsp;( **T***, **const size_t**, **const unsigned int** )
     -
     - return value
-        * [*unsigned int number passed as 3rd param*]th biggest element in T*
+        * [*The number passed as third param*]th biggest element in T*
     - parameters
         * An array contains any type specified as T
         * Length of the array
-        * Unsigned int number to specifies the [*this number*]th biggest element in T* array
+        * Unsigned int number to specify the [*this number*]th biggest element in T* array
 
 <br>
         
@@ -27,7 +27,7 @@
 * *const bool* &nbsp;&nbsp;insertionSort &nbsp;( **T***, **const size_t** )
     -
     - return value
-        * If given Array T* is already sorted return *false*, otherwise return *true*
+        * If T* has already been sorted return *false*, otherwise return *true*
     - parameters
         * An array contains any type specified as T
         * Length of the array
