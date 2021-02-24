@@ -31,7 +31,7 @@
     - parameters
         * An array contains any type specified as T
         * Length of the array
-* *T** &nbsp;&nbsp;insert &nbsp;( **T***, **const size_t**, **const t** )
+* *T** &nbsp;&nbsp;insert &nbsp;( **T***, **const size_t**, **const T** )
     -
     - return value
         * Return Array T* that contains data T passed as third param at proper position
