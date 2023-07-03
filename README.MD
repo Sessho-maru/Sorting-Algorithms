@@ -18,7 +18,7 @@
     - return value
         * The element which is the _X_ th biggest one in given array
     - parameters
-        * An array contains any type specified as T
+        * An array contains the elements of type T
         * Length of the array
         * Unsigned int number _X_
 
