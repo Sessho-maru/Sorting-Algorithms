@@ -79,7 +79,7 @@ namespace Demo
 			std::cout << "Bubble::bubbleSortAndFind `"<< target  << "` thBiggest(unsigned int) ------" << std::endl << std::endl;
 			std::cout <<  target << "th Biggest element in array ";
 			for (const auto& e : unsorted) { std::cout << e << " "; }
-			std::cout << "is :  " << Bubble::bubbleSortAndFindnthBiggest(unsorted, ARRAY_SIZE, target); 
+			std::cout << "is :  " << Bubble::bubbleSortAndFindXthBiggest(unsorted, ARRAY_SIZE, target); 
 			std::cout << std::endl << std::endl << std::endl << std::endl;
 		}
 
@@ -94,7 +94,7 @@ namespace Demo
 			std::cout << "Bubble::bubbleSortAndFind `"<< target  << "` thBiggest(char) ------" << std::endl << std::endl;
 			std::cout <<  target << "th Biggest element in array ";
 			for (const auto& e : unsorted) { std::cout << e << " "; }
-			std::cout << "is :  " << Bubble::bubbleSortAndFindnthBiggest(unsorted, ARRAY_SIZE, target); 
+			std::cout << "is :  " << Bubble::bubbleSortAndFindXthBiggest(unsorted, ARRAY_SIZE, target); 
 			std::cout << std::endl << std::endl << std::endl << std::endl;
 		}
 	}

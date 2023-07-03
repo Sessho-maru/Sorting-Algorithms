@@ -1,4 +1,5 @@
 # Sorting algorithms using templated C++
+(All of these implementations sort elements in increasing order)
 - Bubble sort
 - Insertion sort
 - Quick sort
@@ -8,18 +9,18 @@
 * *const bool* &nbsp;&nbsp;bubbleSort &nbsp;( **T***, **const size_t** )
     -
     - return value
-        * If T* has already been sorted return *false*, otherwise return *true*
+        * If T* is already in increasing order, return *false*, otherwise return *true*
     - parameters
-        * An array contains any type specified as T
+        * An array contains the elements of type T
         * Length of the array
-* *const T* &nbsp;&nbsp;bubbleSortAndFindnthBiggest &nbsp;( **T***, **const size_t**, **const unsigned int** )
+* *const T* &nbsp;&nbsp;bubbleSortAndFindXthBiggest &nbsp;( **T***, **const size_t**, **const unsigned int _X_** )
     -
     - return value
-        * [*The number passed as third param*]th biggest element in T*
+        * The element which is the _X_ th biggest one in given array
     - parameters
         * An array contains any type specified as T
         * Length of the array
-        * Unsigned int number to specify the [*this number*]th biggest element in T* array
+        * Unsigned int number _X_
 
 <br>
         
@@ -27,15 +28,15 @@
 * *const bool* &nbsp;&nbsp;insertionSort &nbsp;( **T***, **const size_t** )
     -
     - return value
-        * If T* has already been sorted return *false*, otherwise return *true*
+        * If T* is already in increasing order, return *false*, otherwise return *true*
     - parameters
-        * An array contains any type specified as T
+        * An array contains the elements of type T
         * Length of the array
-* *T** &nbsp;&nbsp;insert &nbsp;( **T***, **const size_t**, **const T** )
+* *T** &nbsp;&nbsp;insert &nbsp;( **T***, **const size_t**, **const T _X_** )
     -
     - return value
-        * Return Array T* that contains data T passed as third param at proper position
+        * Return sorted array T* that contains _X_ at the proper position
     - parameters
-        * An array contains any type specified as T
+        * An array contains the elements of type T
         * Length of the array
-        * Data T desired to be inserted
+        * The _X_ desire to insert

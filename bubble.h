@@ -41,9 +41,9 @@ namespace Bubble
 	}
 
 	template<typename T>
-	const T bubbleSortAndFindnthBiggest(T* arr, const size_t length, const unsigned int nth) // third param for finding 'specified'th biggest value in arr
+	const T bubbleSortAndFindXthBiggest(T* arr, const size_t length, const unsigned int x) // third param for finding Xth biggest value in arr
 	{
-		for (size_t i = 0; i < nth; i++)
+		for (size_t i = 0; i < x; i++)
 		{
 			for (unsigned int j = 0; j < length - 1 - i; j++)
 			{
@@ -54,6 +54,6 @@ namespace Bubble
 			}
 		}
 
-		return arr[length - nth];
+		return arr[length - x];
 	}
 }

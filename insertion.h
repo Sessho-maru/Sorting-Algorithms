@@ -36,19 +36,19 @@ namespace Insertion
 	}
 
 	template<typename T>
-	T* insert(T* arr, const size_t length, const T param) // insert param into alraedy sorted arr and return it
+	T* insert(T* arr, const size_t length, const T x) // insert x into alraedy sorted arr and return it
 	{
 		T* insertedArr = new T[length + 1];
 		memcpy(insertedArr, arr, sizeof(T) * length);
 
 		int tail = length - 1;
 
-		while (tail > -1 && arr[tail] > param)
+		while (tail > -1 && arr[tail] > x)
 		{
 			insertedArr[tail + 1] = insertedArr[tail];
 			tail--;
 		}
-		insertedArr[tail + 1] = param;
+		insertedArr[tail + 1] = x;
 
 		return insertedArr;
 	}
