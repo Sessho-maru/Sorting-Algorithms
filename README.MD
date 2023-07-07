@@ -1,4 +1,4 @@
-# Sorting algorithms using templated C++
+# Sorting algorithms using template C++
 (All of these implementations sort elements in increasing order)
 - Bubble sort
 - Insertion sort
