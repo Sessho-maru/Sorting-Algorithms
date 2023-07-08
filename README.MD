@@ -21,6 +21,9 @@
         * An array contains the elements of type T
         * Length of the array
         * Unsigned int number _X_
+    - purpose
+        * If you want to find the median of a some large amount of data set eg. From an array has 10,000 elements</br>
+this function executes only a half number of the comparison rather than comparing the entire
 
 <br>
         
@@ -40,3 +43,5 @@
         * An array contains the elements of type T
         * Length of the array
         * The _X_ desire to insert
+    - purpose
+        * This function inserts parameter into sorted array in constant time keeping its order
